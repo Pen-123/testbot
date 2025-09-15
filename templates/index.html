@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guilded Bot Interface</title>
+</head>
+<body>
+    <h1>Send a Message to Guilded Bot</h1>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Type something..." required>
+        <button type="submit">Send</button>
+    </form>
+    {% if response %}
+        <p>Bot will say: <strong>{{ response }}</strong></p>
+    {% endif %}
+</body>
+</html>
